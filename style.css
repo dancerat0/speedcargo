@@ -1,0 +1,293 @@
+header {
+    background-color: #007bff;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1, header p {
+    margin: 0;
+    padding: 0;
+}
+
+.logo-header {
+    width: 80px;
+    height: auto;
+}
+
+.carousel {
+    width: 100vw; 
+    overflow: hidden; 
+}
+
+.carousel-inner .carousel-item img {
+    width: 100%;
+    height: 400px; 
+    object-fit: cover;
+}
+
+.carousel-item {
+    height: 400px; 
+}
+
+.img-fluid,
+.service-img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;
+}
+
+.testimonial-img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    object-position: center; 
+}
+
+.btn-secondary {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+.depoimento-img,
+.depoimento-foto {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.depoimento-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.depoimento-foto {
+    width: 70px;
+    height: 70px;
+}
+
+.blockquote-footer {
+    background: none;
+    border: none; 
+    color: #000; 
+    font-weight: normal;
+}
+
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 15px 0;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.mt-3 {
+    margin-top: 1rem !important;
+}
+
+.container {
+    max-width: 100%; 
+    margin: 0 auto;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: #ffffff;
+    border-bottom: none;
+}
+
+.navbar-nav .nav-item .nav-link {
+    margin-left: 10px;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: opacity 0.3s ease;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.dropbtn:hover {
+    background-color: #0056b3;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+@media (max-width: 992px) {
+    .logo-header {
+        width: 60px; 
+    }
+
+    .btn-secondary {
+        margin-bottom: 15px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-header {
+        width: 50px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .img-fluid,
+    .service-img {
+        height: 250px; 
+    }
+
+    .testimonial-img {
+        height: 150px; 
+    }
+
+    .btn-secondary {
+        margin-bottom: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-header {
+        width: 40px; 
+    }
+
+    .container {
+        padding: 0 10px; 
+    }
+
+    .img-fluid,
+    .service-img {
+        height: 200px;
+    }
+
+    .testimonial-img {
+        height: 120px; 
+    }
+}

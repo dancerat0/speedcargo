@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviço 1 - Transporte Expresso</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <div class="container">
+            <h1>Transporte Expresso</h1>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        <a href="index.html" class="btn btn-secondary mb-4">Voltar à Página Principal</a>
+        <h2>Transporte Expresso</h2>
+        <p>A SpeedCargo oferece Transporte Expresso, garantindo a entrega rápida de mercadorias em até 24 horas, com monitoramento em tempo real para assegurar pontualidade e segurança.</p>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <img src="servicos\teTransporteExpresso.webp" class="img-fluid" alt="Imagem 1">
+            </div>
+            <div class="col-md-6">
+                <img src="servicos\frotaExpresso.jpg" class="img-fluid" alt="Imagem 2">
+            </div>
+        </div>
+
+        <div class="embed-responsive embed-responsive-16by9 my-4">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xMa1vevj1kA" allowfullscreen></iframe>
+        </div>
+
+
+        <h3>Detalhes do Serviço</h3>
+        <ul>
+            <li><strong>Preço:</strong> Sob consulta</li>
+            <li><strong>Tempo para realizar o serviço:</strong> Até 24 horas</li>
+            <li><strong>Dias de atendimento:</strong> Segunda a Sexta</li>
+            <li><strong>Horários de atendimento:</strong> 8h às 18h</li>
+        </ul>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#orcamentoModal">Solicitar Orçamento</button>
+
+        <div class="modal fade" id="orcamentoModal" tabindex="-1" aria-labelledby="orcamentoModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="orcamentoModalLabel">Solicitar Orçamento</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="nome">Nome</label>
+                                <input type="text" class="form-control" id="nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefone">Telefone</label>
+                                <input type="text" class="form-control" id="telefone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="endereco">Endereço</label>
+                                <input type="text" class="form-control" id="endereco">
+                            </div>
+                            <div class="form-group">
+                                <label for="cidade">Cidade</label>
+                                <input type="text" class="form-control" id="cidade">
+                            </div>
+                            <div class="form-group">
+                                <label for="uf">UF</label>
+                                <input type="text" class="form-control" id="uf">
+                            </div>
+                            <div class="form-group">
+                                <label for="data">Data desejada para o serviço</label>
+                                <input type="date" class="form-control" id="data">
+                            </div>
+                            <div class="form-group">
+                                <label for="observacoes">Observações</label>
+                                <textarea class="form-control" id="observacoes" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; Desenvolvido por João Roberto Sontag - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
